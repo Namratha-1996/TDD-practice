@@ -16,6 +16,66 @@ describe('sum', function(){
         });
 });
 
+describe('product', function(){
+    it('it should return 10 when multiplying 2 and 5', function(){
+        assert.equal(functions.product(2, 5), 10);
+    });
+
+        it('it should return 0 when multiplying 0 and 8', function(){
+            assert.equal(functions.product(0, 8), 0);
+        });
+
+        it('it should return -4 when multiplying 2 and -2', function(){
+            assert.equal(functions.product(2, -2), -4);
+        });
+    });
+
+describe('min', function(){
+     it('it should return 2 when numbers are 2 and 2', function(){
+            assert.equal(functions.min(2, 2),2);
+        });
+    
+            it('it should return 0 when numbers are 0 and 6', function(){
+                assert.equal(functions.min(0, 6), 0);
+            });
+    
+            it('it should return -7 when numbers are -1 and -7', function(){
+                assert.equal(functions.min(-1, -7), -7);
+            });
+        });
+
+ describe('max', function(){
+            it('it should return 2 when numbers are 2 and 2', function(){
+                   assert.equal(functions.max(2, 2),2);
+               });
+           
+                   it('it should return 0 when numbers are 0 and 6', function(){
+                       assert.equal(functions.max(0, 6), 6);
+                   });
+           
+                   it('it should return -7 when numbers are -1 and -7', function(){
+                       assert.equal(functions.max(-1, -7), -1);
+                   });
+               });
+
+    describe('head', function(){
+            it ('it should return null when the array is empty', function(){
+                    let arr =[];
+                    assert.isNull(functions.head(arr));
+                });
+            
+                it ('it should return [4] when the array is [4,a,hey]', function(){
+                    let arr =[4,'a','hey'];
+                    assert.equal(functions.head(arr),4);
+                });
+            
+                it ('it should return hey when the array is [hey]', function(){
+                    let arr =['hey'];
+                    assert.equal(functions.head(arr),'hey');
+                });
+            });              
+       
+
 describe('tail', function(){
     it ('it should return null when the array is empty', function(){
         let arr =[];
@@ -32,6 +92,41 @@ describe('tail', function(){
         assert.equal(functions.tail(arr),'hey');
     });
 });
+
+describe('mid', function(){
+    it ('it should return null when the array is empty', function(){
+        let arr =[];
+        assert.isNull(functions.mid(arr));
+    });
+
+    it ('it should return [4] when the array is[3,4,7]', function(){
+        let arr =[3,4,7];
+        assert.equal(functions.mid(arr),4);
+    });
+
+    it ('it should return [4,7] when the array is [3,4,7,2]', function(){
+        let arr =[3,4,7,2];
+        assert.deepEqual(functions.mid(arr),[4, 7]);
+    });
+});
+
+describe('total', function(){
+    it ('it should return null when the array is empty', function(){
+        let arr =[];
+        assert.isNull(functions.total(arr));
+    });
+
+    it ('it should return [6] when the array is [1,2,3]', function(){
+        let arr =[1,2,3];
+        assert.equal(functions.total(arr),6);
+    });
+
+    it ('it should return [1] when the array is [1]', function(){
+        let arr =[1];
+        assert.equal(functions.total(arr),[1]);
+    });
+});
+
 
 describe('merge', function(){
     it('it should return null when both the arrays are empty', function(){

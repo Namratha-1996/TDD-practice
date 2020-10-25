@@ -50,12 +50,14 @@ const mid = function(arr) {
 
 const total = function(nums) {
     let sum = 0;
-
-    for (num of nums) {
+    if (!nums.length) return null;
+    else
+     for (num of nums) {
         sum += num;
     }
 
     return sum;
+    
 };
 
 const average = function(nums) {
