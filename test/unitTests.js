@@ -127,6 +127,57 @@ describe('total', function(){
     });
 });
 
+describe('average', function(){
+    it ('it should return null when the array is empty', function(){
+        let arr =[];
+        assert.isNull(functions.average(arr));
+    });
+
+    it ('it should return 8 when the array is [10,2,9,11]', function(){
+        let arr =[10,2,9,11];
+        assert.equal(functions.average(arr),8);
+    });
+
+    it ('it should return 2.5 when the array is [3,2]', function(){
+        let arr =[3,2];
+        assert.equal(functions.average(arr),[2.5]);
+    });
+});
+
+describe('smallest', function(){
+    it ('it should return null when the array is empty', function(){
+        let arr =[];
+        assert.isNull(functions.smallest(arr));
+    });
+
+    it ('it should return 3 when the array is [7,3,9]', function(){
+        let arr =[7,3,9];
+        assert.equal(functions.smallest(arr),3);
+    });
+
+    it ('it should return -5 when the array is [-1,9,-5]', function(){
+        let arr =[-1,9,-5];
+        assert.equal(functions.smallest(arr),[-5]);
+    });
+});
+
+describe('largest', function(){
+    it ('it should return null when the array is empty', function(){
+        let arr =[];
+        assert.isNull(functions.largest(arr));
+    });
+
+    it ('it should return 9 when the array is [7,3,9]', function(){
+        let arr =[7,3,9];
+        assert.equal(functions.largest(arr),9);
+    });
+
+    it ('it should return 0 when the array is [0,-5,-1]', function(){
+        let arr =[0,-5,-1];
+        assert.equal(functions.largest(arr),0);
+    });
+});
+
 
 describe('merge', function(){
     it('it should return null when both the arrays are empty', function(){
