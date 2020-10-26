@@ -123,7 +123,7 @@ describe('total', function(){
 
     it ('it should return [1] when the array is [1]', function(){
         let arr =[1];
-        assert.equal(functions.total(arr),[1]);
+        assert.equal(functions.total(arr),1);
     });
 });
 
@@ -140,7 +140,7 @@ describe('average', function(){
 
     it ('it should return 2.5 when the array is [3,2]', function(){
         let arr =[3,2];
-        assert.equal(functions.average(arr),[2.5]);
+        assert.equal(functions.average(arr),2.5);
     });
 });
 
@@ -157,7 +157,7 @@ describe('smallest', function(){
 
     it ('it should return -5 when the array is [-1,9,-5]', function(){
         let arr =[-1,9,-5];
-        assert.equal(functions.smallest(arr),[-5]);
+        assert.equal(functions.smallest(arr),-5);
     });
 });
 

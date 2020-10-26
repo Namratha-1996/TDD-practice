@@ -51,7 +51,7 @@ const mid = function(arr) {
 const total = function(nums) {
     let sum = 0;
     if (!nums.length) return null;
-    else
+    
      for (num of nums) {
         sum += num;
     }
