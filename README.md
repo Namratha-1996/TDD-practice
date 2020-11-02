@@ -18,5 +18,5 @@ A school project for practicing unit testing with [Mocha](https://mochajs.org/) 
 
 ## Lessons learned working on this project
 
-- I learned how to use Chai's assertion syntax for unit tests.
-- I learned how to use VS code.
+- We learned how to use Chai's assertion syntax for unit tests.
+- We learned how to use VS code.
