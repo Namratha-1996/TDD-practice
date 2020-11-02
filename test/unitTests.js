@@ -3,6 +3,7 @@ const assert = chai.assert;
 const functions= require('../functions');
 
 describe('sum', function(){
+    
     it('should return 4 when adding 2 and 2', function(){
         assert.equal(functions.sum(2, 2), 4);
     });
@@ -17,6 +18,7 @@ describe('sum', function(){
 });
 
 describe('product', function(){
+
     it('it should return 10 when multiplying 2 and 5', function(){
         assert.equal(functions.product(2, 5), 10);
     });
@@ -31,6 +33,7 @@ describe('product', function(){
 });
 
 describe('min', function(){
+
     it('it should return 2 when numbers are 2 and 2', function(){
     assert.equal(functions.min(2, 2),2);
     });
@@ -45,6 +48,7 @@ describe('min', function(){
 });
 
  describe('max', function(){
+
     it('it should return 2 when numbers are 2 and 2', function(){
         assert.equal(functions.max(2, 2),2);
     });
@@ -59,6 +63,7 @@ describe('min', function(){
 });
 
 describe('head', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.head(arr));
@@ -77,6 +82,7 @@ describe('head', function(){
        
 
 describe('tail', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.tail(arr));
@@ -94,6 +100,7 @@ describe('tail', function(){
 });
 
 describe('mid', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.mid(arr));
@@ -111,6 +118,7 @@ describe('mid', function(){
 });
 
 describe('total', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.total(arr));
@@ -128,6 +136,7 @@ describe('total', function(){
 });
 
 describe('average', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.average(arr));
@@ -145,6 +154,7 @@ describe('average', function(){
 });
 
 describe('smallest', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.smallest(arr));
@@ -162,6 +172,7 @@ describe('smallest', function(){
 });
 
 describe('largest', function(){
+
     it ('it should return null when the array is empty', function(){
         let arr =[];
         assert.isNull(functions.largest(arr));
@@ -180,24 +191,22 @@ describe('largest', function(){
 
 
 describe('merge', function(){
+
     it('it should return null when both the arrays are empty', function(){
         let arr1 = [];
         let arr2 = [];
         assert.isNull(functions.merge(arr1,arr2));
-
     });
 
     it('it should return [2,8] when arrays are [2,8] and [] ', function(){
         let arr1 = [2,8];
         let arr2 = [];
         assert.deepEqual(functions.merge(arr1,arr2), [2,8]);
-
     });
 
     it('it should return [2,8,7,-3,1] when merging [2,7,1] and [8,-3]', function(){
         let arr1 = [2,7,1];
         let arr2 = [8,-3];
         assert.deepEqual(functions.merge(arr1,arr2), [2,8,7,-3,1]);
-
     });
 });
