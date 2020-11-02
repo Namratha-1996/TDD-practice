@@ -4,19 +4,19 @@ A school project for practicing unit testing with [Mocha](https://mochajs.org/) 
 
 ## Team members
 
--Zameer Hussain Mohammed
--[Namratha Pulavarthy](https://github.com/Namratha-1996/TDD-practice)
+- Zameer Hussain Mohammed
+- [Namratha Pulavarthy](https://github.com/Namratha-1996/TDD-practice)
 
 ## Setup
 
--Clone this repository to your machine
--Go into the project's root directory, and run the command `npm install`.
--run the test suite using the cammand `npm test`.
+- Clone this repository to your machine
+- Go into the project's root directory, and run the command `npm install`.
+- Run the test suite using the cammand `npm test`.
 
--if  the command `npm test` does not work, you may need to install mocha globally on your machine.
--do this with the comand `npm install -g mocha`.
+- If  the command `npm test` does not work, you may need to install mocha globally on your machine.
+- Do this with the comand `npm install -g mocha`.
 
 ## Lessons learned working on this project
 
--I learned how to use Chai's assertion syntax for unit tests.
--I learned hoe to use VS code.
+- I learned how to use Chai's assertion syntax for unit tests.
+- I learned hoe to use VS code.
