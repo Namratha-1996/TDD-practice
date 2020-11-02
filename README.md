@@ -5,4 +5,4 @@ A school project for practicing unit testing with [Mocha](https://mochajs.org/) 
 ## Team members
 
 -Zameer Hussain Mohammed
--Namratha Pulavarthy
+-[Namratha Pulavarthy](https://github.com/Namratha-1996/TDD-practice)
